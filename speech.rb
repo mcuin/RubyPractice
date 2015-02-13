@@ -18,6 +18,16 @@ a = :symbol
 
 EmpreStateBuilding = "350 5th Avenue, NYC, NY"
 
+2.times{ print "Yes, I've used chunky bacon in my examples, but never again!"}
+
+loop do
+	print "Much better."
+	print "Ah. More space!"
+	print "My back was killin' me in those crab pinchers."
+end
+
+{ |x, y| x + y }
+
 front_door.open
 
 front_door.open.close
