@@ -28,6 +28,18 @@ end
 
 { |x, y| x + y }
 
+(1..3)
+
+('a'..'z')
+
+[1, 2, 3]
+
+['coat', 'mittens', 'snowboard']
+
+{'a' => 'aardvark', 'b' => 'badger'}
+
+{'name' => 'Peter', 'proffession' => 'lion tamer', 'great love' => 'flannel'}
+
 front_door.open
 
 front_door.open.close
