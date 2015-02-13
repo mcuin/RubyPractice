@@ -18,4 +18,20 @@ a = :symbol
 
 EmpreStateBuilding = "350 5th Avenue, NYC, NY"
 
+front_door.open
+
+front_door.open.close
+
+front_door.is_open?
+
+front_door.paint(3, :red)
+
+front_door.paint(3, :red).dry(30).close
+
+print "See, no dot."
+
+Door::new(oak)
+
+
+
 
