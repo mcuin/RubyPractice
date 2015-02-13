@@ -32,6 +32,15 @@ print "See, no dot."
 
 Door::new(oak)
 
+$x
+$y
+
+@chunky
+@bacon
+
+@@raise
+@@two
+
 
 
 
