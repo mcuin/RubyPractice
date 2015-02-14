@@ -36,6 +36,14 @@ print "File encoded. Please enter a new file name: "
 
 file_name = gets.strip
 
-File::open("idea" + file_name + ".txt", "w") do |f|
+File::open("idea-" + file_name + ".txt", "w") do |f|
 	f << idea
+end
+
+Dir['idea-*.txt'].each do |file_name|
+	idea = File.read(file_name)
+	code_words.each do |real, code|
+		idea.gsub!(code, real)
+	end
+	print idea
 end
