@@ -47,3 +47,5 @@ Dir['idea-*.txt'].each do |file_name|
 	end
 	print idea
 end
+
+
