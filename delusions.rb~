@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-require_relative 'wordlist'
+require 'wordlist'
 
 print "Type and be diabolical: "
 idea_backwards = gets.reverse
