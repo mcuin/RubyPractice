@@ -25,3 +25,35 @@ end
 if approaching_guy == false
 	print "Get in here, you conniving devil.\n"
 end
+
+if nil.==(true)
+	print "This will never see relization."
+end
+
+at_hotel = true
+
+email = if at_hotel
+	print "why@hotelambrose.com\n"
+else
+	print "why@drnhowardcham.com\n"
+end
+
+email = if at_hotel
+	address = "why"
+	address << "@hotelambrose"
+	address << ".com"
+end
+
+print (if at_hotel.nil?
+	"No clue if he's in the hotel."
+elsif at_hotel == true
+	"Definitely in."
+elsif at_hotel == false 
+	"He's out."
+else 
+	"The system is on the fritz."
+end )
+
+print "\n"
+
+	
