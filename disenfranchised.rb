@@ -30,4 +30,17 @@ end
 
 puts dr_chams_timeline(1919) 
 
+opus_magnum = true
+def save_hannah
+	success = opus_magnum
+end
+
+verb = 'rescued'
+['sedated', 'sprinkled', 'electrocuted'].each do |verb|
+	puts "Dr. Cham " + verb + " his niece Hannah."
+end
+
+puts "Finally, Dr. Cham " + verb + " his niece Hannah."
+
+
 
