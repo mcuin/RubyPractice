@@ -24,6 +24,15 @@ class LotteryTicket
 		
 	end
 
+	def score(final)
+		
+		count = 0
+		
+		final.picks.each do |note|
+			count += 1 if picks.include? note
+		end
+		count
+	end
 end
 
 class LotteryDraw
@@ -35,5 +44,25 @@ class LotteryDraw
 			@@tickets[customer] = []
 		end
 		@@tickets[customer] += tickets
+	end
+end
+
+class << LotteryDraw
+
+	def play
+		final = LotteryTicket.new_random
+		winners = {}
+
+		@@tickets.each do |buyer, ticket_list|
+			ticket_list.each do |ticket|
+				score = ticket.score(final)
+				
+				next if score.zero?
+				winners[buyer] ||= []
+				winners[buyer] << [ticket, score]
+			end
+		end
+		@@tickets.clear
+		winners
 	end
 end
