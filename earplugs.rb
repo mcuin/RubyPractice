@@ -11,8 +11,8 @@ def wipe_mutterings(sentence)
 		sentence[open..close] = '' if close
 	end
 	sentence
+	
 end
-
 what_he_said = "But, strangely (em-pithy-dah), I learned upon, played upon (pon-shoo) the organs on my home (oth-rea) planet."
 wipe_mutterings(what_he_said)
 print "#{what_he_said}\n"
@@ -29,3 +29,18 @@ y = y.length
 
 z = :include?
 z = "a string".respond_to? z
+
+str = "A string is a long shelf of letters and spaces."
+puts str[0]
+puts str[0..-1]
+puts str[0..-2]
+puts str[0, 3]
+puts str['shelf']
+
+def wipe_mutterings(sentence)
+	unless sentence.respond_to? :gsub
+		raise ArgumentError, "cannot wipe mutterings from a #{sentence.class}"
+	end
+	sentence.gsub( /\([-\w]+\)/, '')
+	
+end
